@@ -22,8 +22,8 @@ module.exports = {
 	  },
 	  extend: {
 		fontFamily: {
-		  /* Screenpipe Brand: Monospace primary */
-		  sans: ["JetBrains Mono", "SF Mono", "IBM Plex Mono", "ui-monospace", "monospace"],
+		  /* DESK-AI Brand: Sleek modern sans-serif primary, crisp mono for code */
+		  sans: ["Plus Jakarta Sans", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
 		  mono: ["JetBrains Mono", "SF Mono", "IBM Plex Mono", "ui-monospace", "monospace"],
 		},
 		fontSize: {

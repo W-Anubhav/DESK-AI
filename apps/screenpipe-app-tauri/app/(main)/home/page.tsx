@@ -1024,9 +1024,12 @@ function HomeContent() {
   const renderMainSection = () => {
     if (isSectionHidden(activeSection) && activeSection !== "help") {
       return (
-        <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
-          <img src="/128x128.png" alt="screenpipe" className="w-16 h-16 opacity-30 mb-4" />
-          <p className="text-sm font-mono">screenpipe</p>
+        <div className="flex flex-col items-center justify-center h-full text-muted-foreground p-8">
+          <div className="h-14 w-14 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/25 mb-4">
+            <span className="text-xl font-black text-white tracking-tight">D</span>
+          </div>
+          <p className="text-base font-bold tracking-wider text-foreground">DESK-AI</p>
+          <p className="text-xs text-muted-foreground mt-1">Desktop Intelligence & Automation</p>
         </div>
       );
     }
@@ -1105,9 +1108,12 @@ function HomeContent() {
         );
       default:
         return (
-          <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
-            <img src="/128x128.png" alt="screenpipe" className="w-16 h-16 opacity-30 mb-4" />
-            <p className="text-sm font-mono">screenpipe</p>
+          <div className="flex flex-col items-center justify-center h-full text-muted-foreground p-8">
+            <div className="h-14 w-14 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/25 mb-4">
+              <span className="text-xl font-black text-white tracking-tight">D</span>
+            </div>
+            <p className="text-base font-bold tracking-wider text-foreground">DESK-AI</p>
+            <p className="text-xs text-muted-foreground mt-1">Desktop Intelligence & Automation</p>
           </div>
         );
     }
@@ -1504,6 +1510,26 @@ function HomeContent() {
                 bottom items would be pushed below the fold by long
                 conversation lists. */}
             <div className="pt-2 pr-2 pb-2 flex-1 flex flex-col min-h-0">
+              {/* DESK-AI Brand Header */}
+              <div className="px-2.5 pt-1.5 pb-3 mb-2 border-b border-border/50 flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div className="relative flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 shadow-md shadow-indigo-500/25">
+                    <span className="text-sm font-black tracking-tight text-white">D</span>
+                    <span className="absolute -bottom-0.5 -right-0.5 flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                    </span>
+                  </div>
+                  <div className="flex flex-col min-w-0">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs font-bold tracking-wider text-foreground">DESK-AI</span>
+                      <span className="rounded-full bg-primary/15 px-1.5 py-0.2 text-[9px] font-semibold text-primary">CORE</span>
+                    </div>
+                    <span className="text-[10px] text-muted-foreground tracking-tight font-medium truncate">Desktop Intelligence</span>
+                  </div>
+                </div>
+              </div>
+
               {/* Main sections. Order and visibility are the user's — drag a
                   row or right-click it; enterprise policy still decides
                   eligibility. */}

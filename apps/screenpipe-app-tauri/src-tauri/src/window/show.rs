@@ -120,8 +120,8 @@ impl RewindWindowId {
 
     pub fn title(&self) -> &str {
         match self {
-            RewindWindowId::Main => "screenpipe",
-            RewindWindowId::Home => "screenpipe",
+            RewindWindowId::Main => "DESK-AI",
+            RewindWindowId::Home => "DESK-AI",
             RewindWindowId::Search => "search",
             RewindWindowId::Onboarding => "onboarding",
             RewindWindowId::Chat => "ai chat",

@@ -1,21 +1,46 @@
-<h1 align="center"><a href="https://screenpipe.com/how-to-install?download=1">DOWNLOAD SCREENPIPE</a></h1>
+# ⚡ DESK-AI — Desktop AI Assistant
 
-<img width="1500" height="500" alt="image" src="https://github.com/user-attachments/assets/058a44b8-fcad-4a37-92d8-830167dbd400" />
+> **24/7 Intelligent Context, Memory & Automation for Your Desktop**
 
+DESK-AI continuously captures and indexes your desktop activity locally, giving you instant AI-powered recall, meeting transcripts, and intelligent automations.
 
-<p align="center">
-   <a href ="https://screenpi.pe">
-      <img src="https://github.com/user-attachments/assets/d3b1de26-c3c0-4c84-b9c4-b03213b97a30" alt="logo" width="200">
-   </a>
-</p>
+---
 
-<h1 align="center">[ screenpipe | YC S26 ]</h1>
+## 🚀 Quick Start (Run on Any Laptop)
 
+### Prerequisites
+- **Node.js (v18 or v20+)** installed ([nodejs.org](https://nodejs.org/))
+- **Git**
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/W-Anubhav/DESK-AI.git
+cd DESK-AI
+```
 
+### 2. Run the DESK-AI Web Interface
+```bash
+cd apps/screenpipe-app-tauri
+npm install --legacy-peer-deps
+npm run dev:web:node
+```
+Then open your browser at:
+👉 **[http://localhost:1420/home](http://localhost:1420/home)**
 
-<p align="center">Screenpipe remembers how you actually work</p>
-<p align="center">Record your screen continuously locally and provide context to your agents (Claude, Codex, Openclaw, Hermes, Runner...)</p>
+### 3. Run as Native Desktop App (Optional)
+If you have [Rust](https://rustup.rs/) installed:
+```bash
+npm run dev:tauri
+```
+
+---
+
+## 📁 Repository Structure
+- **`apps/screenpipe-app-tauri/`**: Modern Next.js frontend UI with Plus Jakarta Sans typography and futuristic cyber theme.
+- **`crates/`**: Core Rust engine (vision, audio, OCR, SQLite index).
+- **`docs/capstone/`**: Capstone Presentation slides (`.pptx`, `.pdf`) and Project Synopsis report (`.docx`).
+
+---
 
 
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "screenpipe - Development",
+  "productName": "DESK-AI",
   "identifier": "screenpi.pe.dev",
   "build": {
     "beforeDevCommand": "bun run dev",
@@ -12,8 +12,8 @@
     "active": true,
     "publisher": "Mediar, Inc.",
     "category": "DeveloperTool",
-    "shortDescription": "24/7 memory for your desktop",
-    "longDescription": "24/7 memory for your desktop. 100% local. You own your data.",
+    "shortDescription": "DESK-AI - 24/7 Intelligent context and memory for your desktop",
+    "longDescription": "DESK-AI: Intelligent context, memory and automation for your desktop. 100% local. You own your data.",
     "copyright": "",
     "targets": [
       "app",

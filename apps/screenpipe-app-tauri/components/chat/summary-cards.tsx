@@ -234,17 +234,21 @@ export function SummaryCards({
 
   return (
     <div className="ph-no-capture relative flex flex-col items-center pt-6 pb-2 px-4">
-      {/* Header */}
-      <div className="relative mx-auto mb-2 w-fit">
-        <div className="absolute -inset-4 border border-dashed border-border/50" />
-        <div className="absolute -inset-2 border border-border/30" />
-        <PipeAIIconLarge size={40} thinking={false} className="relative text-foreground/80" />
+      {/* DESK-AI Header */}
+      <div className="relative mx-auto mb-3 w-fit">
+        <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 shadow-xl shadow-indigo-500/25">
+          <span className="text-2xl font-black text-white tracking-wider">D</span>
+          <span className="absolute -bottom-1 -right-1 flex h-3.5 w-3.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+            <span className="relative inline-flex h-3.5 w-3.5 rounded-full bg-cyan-500 ring-2 ring-background" />
+          </span>
+        </div>
       </div>
-      <h3 className="text-sm font-medium mb-0.5 text-foreground">
-        {userName ? `How can I help, ${userName}?` : "How can I help today?"}
+      <h3 className="text-base font-bold mb-1 text-foreground">
+        {userName ? `How can DESK-AI assist you, ${userName}?` : "How can DESK-AI assist you today?"}
       </h3>
-      <p className="text-xs text-muted-foreground mb-2">
-        From everything you&apos;ve seen, said, or heard
+      <p className="text-xs text-muted-foreground mb-3 text-center">
+        Powered by 24/7 intelligent desktop perception & automated workflows
       </p>
 
       {/* The onboarding goal or General Settings choice determines priority. */}

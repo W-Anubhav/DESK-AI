@@ -85,21 +85,21 @@ function ContextualSuggestions({
 
   return (
     <div className="ph-no-capture relative flex w-full flex-col items-center px-4 pb-2 pt-6">
-      <div className="relative mx-auto mb-2 w-fit">
-        <div className="absolute -inset-4 border border-dashed border-border/50" />
-        <div className="absolute -inset-2 border border-border/30" />
-        <PipeAIIconLarge
-          size={40}
-          thinking={isLoading || isRefreshing}
-          className="relative text-foreground/80"
-        />
+      <div className="relative mx-auto mb-3 w-fit">
+        <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 shadow-xl shadow-indigo-500/25">
+          <span className="text-2xl font-black text-white tracking-wider">D</span>
+          <span className="absolute -bottom-1 -right-1 flex h-3.5 w-3.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+            <span className="relative inline-flex h-3.5 w-3.5 rounded-full bg-cyan-500 ring-2 ring-background" />
+          </span>
+        </div>
       </div>
 
-      <h3 className="mb-0.5 text-sm font-medium text-foreground">
-        Start with what you&apos;ve been doing
+      <h3 className="mb-1 text-base font-bold text-foreground">
+        Welcome to <span className="desk-gradient-text">DESK-AI</span>
       </h3>
-      <p className="mb-4 text-xs text-muted-foreground">
-        Pick a prompt, edit it, then send when it looks right
+      <p className="mb-4 text-xs text-muted-foreground text-center max-w-sm">
+        Intelligent 24/7 Context & Desktop Automation. Pick a prompt to get started:
       </p>
 
       <div

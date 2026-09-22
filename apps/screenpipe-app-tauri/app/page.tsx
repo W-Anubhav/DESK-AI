@@ -32,6 +32,19 @@
 // Do NOT move any window's page back to this root route.
 // ─────────────────────────────────────────────────────────────────────────────
 
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 export default function RootPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      router.replace("/home");
+    }
+  }, [router]);
+
   return null;
 }
