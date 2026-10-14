@@ -19,7 +19,7 @@ rust-version = "1.94"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "=2.6.3", features = [] }
+tauri-build = { version = "=2.7.2", features = [] }
 tauri-helper = { git = "https://github.com/screenpipe/tauri-helper", rev = "e25ff1d2c5026189305a0251a1e06788efe1d2b3" }
 # Used by build.rs on Windows MSVC targets (incl. cross-compiles from
 # Linux/macOS CI runners) to compile c/bswap_shim.c — provides
@@ -30,7 +30,7 @@ cc = "1"
 
 [dependencies]
 tauri-helper = { git = "https://github.com/screenpipe/tauri-helper", rev = "e25ff1d2c5026189305a0251a1e06788efe1d2b3" }
-tauri = { version = "=2.11.2", features = [
+tauri = { version = "=2.11.6", features = [
   "protocol-asset",
   "macos-private-api",
   "tray-icon",
@@ -40,22 +40,22 @@ tauri = { version = "=2.11.2", features = [
   # WindowBuilder::add_child, which is currently behind the unstable feature.
   "unstable",
 ] }
-tauri-utils = { version = "=2.9.3", features = [] }
+tauri-utils = { version = "=2.10.1", features = [] }
 # plugins
-tauri-plugin-fs = { version = "=2.4.5", features = ["watch"] }
-tauri-plugin-notification = "=2.3.3"
-tauri-plugin-updater = "=2.10.1"
+tauri-plugin-fs = { version = "=2.5.2", features = ["watch"] }
+tauri-plugin-notification = "=2.4.0"
+tauri-plugin-updater = "=2.12.0"
 # version ordering for the updater's newer-version promotion (#5784 double update)
 semver = "1"
 # staged-update signature re-verification (same crate/version the updater plugin uses)
 minisign-verify = "0.2"
-tauri-plugin-dialog = "=2.6.0"
+tauri-plugin-dialog = "=2.7.3"
 tauri-plugin-os = "=2.3.2"
 tauri-plugin-process = "=2.3.1"
 tauri-plugin-autostart = "=2.5.1"
-tauri-plugin-shell = "=2.3.5"
-tauri-plugin-store = "=2.4.4"
-tauri-plugin-http = "=2.5.7"
+tauri-plugin-shell = "=2.3.6"
+tauri-plugin-store = "=2.4.5"
+tauri-plugin-http = "=2.7.0"
 tauri-plugin-permission-flow = { git = "https://github.com/EzraEllette/permission-flow", rev = "d0a4b78a0599b926bfc59e7e272b742aa07fcebb", package = "tauri-plugin-permission-flow" }
 
 serde = { version = "1.0", features = ["derive"] }
@@ -117,7 +117,7 @@ axum = "0.6.0" # or your current version
 
 
 dirs = "6.0.0"
-tauri-plugin-deep-link = "=2.4.9"
+tauri-plugin-deep-link = "=2.4.10"
 
 once_cell = "1.20.0"
 tauri-plugin-sentry = "0.5.0"
@@ -338,7 +338,7 @@ serial_test = "3"
 tower = { version = "0.4", features = ["util"] }
 # MockRuntime for store.rs recovery tests that must exercise the real
 # tauri-plugin-store registry (state + resources table).
-tauri = { version = "=2.11.2", features = ["test"] }
+tauri = { version = "=2.11.6", features = ["test"] }
 # staged_update tests: sign fake update archives with a throwaway key
 minisign = "0.7"
 
