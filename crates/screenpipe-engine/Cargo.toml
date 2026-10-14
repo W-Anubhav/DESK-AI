@@ -229,7 +229,7 @@ windows = { workspace = true, features = [
     "Win32_UI_Accessibility",
     "Win32_UI_WindowsAndMessaging",
 ] }
-socket2 = "0.5"
+socket2 = "0.6"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 cidre = { git = "https://github.com/yury/cidre.git", rev = "8481f3f0dc7dd39bb5be80d9424bfac0cad3801a", features = ["ax", "ns", "av", "blocks"] }
