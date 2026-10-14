@@ -157,7 +157,7 @@ strsim = "0.10"
 objc = "0.2.7"
 accessibility-sys = { git = "https://github.com/eiz/accessibility.git", rev = "173e898d4a52ee0afe0224ecb458d324057856e7" }
 core-foundation = "0.10"
-core-graphics = { version = "0.24", features = ["highsierra"] }
+core-graphics = { version = "0.25", features = ["highsierra"] }
 
 # Windows platform deps
 uiautomation = "0.16.1"
