@@ -101,7 +101,7 @@ sha2 = "0.10"
 # 0.2.189 sizes vm_statistics64 for macOS 27. sysinfo 0.29 forwards that
 # 104-word size to macOS 26, whose libsystem maximum is 62, on every memory
 # refresh. Keep the pre-macOS-27 layout until the caller is version-aware.
-libc = "=0.2.186"
+libc = "=0.2.191"
 anyhow = "1.0.71"
 arboard = "3.4"
 
@@ -154,7 +154,7 @@ screenpipe-vault = { path = "../../../crates/screenpipe-vault" }
 screenpipe-connect = { path = "../../../crates/screenpipe-connect", features = ["specta"] }
 screenpipe-secrets = { path = "../../../crates/screenpipe-secrets" }
 screenpipe-events = { path = "../../../crates/screenpipe-events" }
-sqlx = { version = "=0.9.0", default-features = false, features = ["sqlite", "runtime-tokio"], optional = true }
+sqlx = { version = "=0.9.1", default-features = false, features = ["sqlite", "runtime-tokio"], optional = true }
 eventkit-rs = { git = "https://github.com/screenpipe/eventkit-rs", rev = "9dd52787c8435d734ed443e2d5641f45b0177cae", default-features = false, features = ["events"] }
 # Async PII reconciliation (issue #3185 / PR #3188). `onnx-coreml` is
 # the right execution-provider for Apple Silicon (image PII via

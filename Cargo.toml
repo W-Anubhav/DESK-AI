@@ -95,7 +95,7 @@ sha2 = "0.10"
 hmac = "0.12"
 
 # Database
-sqlx = { version = "=0.9.0", default-features = false, features = [
+sqlx = { version = "=0.9.1", default-features = false, features = [
     "sqlite-bundled",
     "runtime-tokio",
     "macros",
@@ -124,7 +124,7 @@ samplerate = "0.2.4"
 libsamplerate-sys = "0.1.10"
 
 # Crypto
-argon2 = "0.5"
+argon2 = "0.6"
 chacha20poly1305 = "0.10"
 zeroize = { version = "1.8", features = ["derive"] }
 
